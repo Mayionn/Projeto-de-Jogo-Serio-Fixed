@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 75feaac5e02a18548870d40b04afd2e5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 5
+    100002: Camera
+    100004: Cup
+    100006: //RootNode
+    100008: Fries
+    100010: Fry
+    100012: Fry001
+    100014: Fry002
+    100016: Lamp
+    400000: 5
+    400002: Camera
+    400004: Cup
+    400006: //RootNode
+    400008: Fries
+    400010: Fry
+    400012: Fry001
+    400014: Fry002
+    400016: Lamp
+    2000000: Camera
+    2100000: No Name
+    2300000: 5
+    2300002: Cup
+    2300004: Fries
+    2300006: Fry
+    2300008: Fry001
+    2300010: Fry002
+    3300000: 5
+    3300002: Cup
+    3300004: Fries
+    3300006: Fry
+    3300008: Fry001
+    3300010: Fry002
+    4300000: Fry002
+    4300002: Fry001
+    4300004: Fry
+    4300006: Fries
+    4300008: 5
+    4300010: Cup
+    10800000: Lamp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
