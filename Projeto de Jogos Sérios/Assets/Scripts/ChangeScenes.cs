@@ -15,4 +15,14 @@ public class ChangeScenes : MonoBehaviour {
     {
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void reloadScene1()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
+    public void reloadScene2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
 }
