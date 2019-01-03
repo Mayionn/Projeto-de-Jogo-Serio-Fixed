@@ -1514,7 +1514,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8aeb2cda50d61554aa34ceb721e8f6dc,
+      objectReference: {fileID: 21300000, guid: 516f6bf1dadb50a47a785f639a477484,
         type: 3}
     - target: {fileID: 114230171520984788, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -1535,7 +1535,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 770150ed698ef744983732b6961ce1b2,
+      objectReference: {fileID: 21300000, guid: 516f6bf1dadb50a47a785f639a477484,
         type: 3}
     - target: {fileID: 114266564374319248, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -3132,7 +3132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5882353, g: 0.6784314, b: 0.7647059, a: 1}
+  m_Color: {r: 0.58318126, g: 0.8396226, b: 0.47921857, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3858,7 +3858,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8aeb2cda50d61554aa34ceb721e8f6dc,
+      objectReference: {fileID: 21300000, guid: 516f6bf1dadb50a47a785f639a477484,
         type: 3}
     - target: {fileID: 114230171520984788, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -3904,7 +3904,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 770150ed698ef744983732b6961ce1b2,
+      objectReference: {fileID: 21300000, guid: 34fb297dff750d7489cc1b273a381da1,
         type: 3}
     - target: {fileID: 114266564374319248, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -5257,7 +5257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.58753115, g: 0.6758411, b: 0.764151, a: 1}
+  m_Color: {r: 0.58431375, g: 0.84313726, b: 0.48235294, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
