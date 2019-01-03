@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SubmitButton : MonoBehaviour {
+public class SubmitButtonLevel2 : MonoBehaviour
+{
 
     public GameObject submitPanel;
 
@@ -17,37 +18,39 @@ public class SubmitButton : MonoBehaviour {
 
     // Array do texto que vai conter as respostas corretas e as incorretas
     public GameObject[] text = { };
-    
-    void Update ()
+
+    void Update()
     {
-        if (submitPanel.activeInHierarchy) { 
 
         // Se o primeiro objeto do array estiver ativo, então o texto também vai estar ativo
         if (correct[0].activeInHierarchy)
-         {
-             text[0].SetActive(true);
-         } else
-         {
+        {
+            text[0].SetActive(true);
+        }
+        else
+        {
             text[0].SetActive(false);
-         }
+        }
 
-         if (correct[1].activeInHierarchy)
-         {
-             text[1].SetActive(true);
-         } else
-         {
+        if (correct[1].activeInHierarchy)
+        {
+            text[1].SetActive(true);
+        }
+        else
+        {
             text[1].SetActive(false);
-         }
+        }
 
-         if (correct[2].activeInHierarchy)
+        if (incorrect[0].activeInHierarchy)
         {
             text[2].SetActive(true);
-        } else
+        }
+        else
         {
             text[2].SetActive(false);
         }
 
-        if (correct[3].activeInHierarchy)
+        if (incorrect[1].activeInHierarchy)
         {
             text[3].SetActive(true);
         }
@@ -56,15 +59,16 @@ public class SubmitButton : MonoBehaviour {
             text[3].SetActive(false);
         }
 
-        if (incorrect[0].activeInHierarchy)
-         {
+        if (incorrect[2].activeInHierarchy)
+        {
             text[4].SetActive(true);
-         } else
-         {
+        }
+        else
+        {
             text[4].SetActive(false);
-         }
+        }
 
-        if (incorrect[1].activeInHierarchy)
+        if (incorrect[3].activeInHierarchy)
         {
             text[5].SetActive(true);
         }
@@ -73,7 +77,7 @@ public class SubmitButton : MonoBehaviour {
             text[5].SetActive(false);
         }
 
-        if (incorrect[2].activeInHierarchy)
+        if (incorrect[4].activeInHierarchy)
         {
             text[6].SetActive(true);
         }
@@ -84,22 +88,23 @@ public class SubmitButton : MonoBehaviour {
 
         // Se algum texto do array das respostas incorretas estiver visível, um botão a dizer "tentar outra vez" irá aparecer.
         // Caso não, um botão a dizer "continuar" vai aparecer, onde nos vai levar para o próximo nível
-        if (text[4].activeInHierarchy || text[5].activeInHierarchy || text [6].activeInHierarchy)                                          // Texto "Tentar outra vez"
+        if (text[2].activeInHierarchy || text[3].activeInHierarchy || text[4].activeInHierarchy || text[5].activeInHierarchy || text[6].activeInHierarchy)                                          // Texto "Tentar outra vez"
         {
             tryAgain.SetActive(true);
             continueGame.SetActive(false);
         }
-        
-        if (text[0].activeInHierarchy && text[1].activeInHierarchy && text[2].activeInHierarchy && text[3].activeInHierarchy)             // Texto "Continuar"
+
+        if (text[0].activeInHierarchy && text[1].activeInHierarchy)             // Texto "Continuar"
         {
             continueGame.SetActive(true);
             tryAgain.SetActive(false);
-        } else
+        }
+        else
         {
             tryAgain.SetActive(true);
             continueGame.SetActive(false);
         }
     }
-    }
-}         
+}
+
 

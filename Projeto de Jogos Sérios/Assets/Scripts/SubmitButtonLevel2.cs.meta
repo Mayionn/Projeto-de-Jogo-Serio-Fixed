@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a613ae2badec51943af5e75e1ad75501
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - submitPanel: {fileID: 1895397467951954, guid: d9f4434dbe4693843917dd33fd9114a3,
+      type: 2}
+  - tryAgain: {fileID: 1027659758903852, guid: df0436764709aa2498997ee793a52348, type: 2}
+  - continueGame: {fileID: 1689694802956122, guid: 5b2037a926d09a9469246d102e7ba041,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

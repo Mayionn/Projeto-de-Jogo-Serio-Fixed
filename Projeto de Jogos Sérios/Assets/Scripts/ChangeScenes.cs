@@ -25,4 +25,9 @@ public class ChangeScenes : MonoBehaviour {
     {
         SceneManager.LoadScene("Level 2");
     }
+
+    public void BacktoMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }
