@@ -33,7 +33,7 @@ public class SubmitButtonLevel1 : MonoBehaviour
             submitButton.interactable = false;
         }
 
-        if (correct[0].activeInHierarchy && correct[1].activeInHierarchy && correct[2].activeInHierarchy && correct[3].activeInHierarchy && incorrect[0].activeInHierarchy && incorrect[1].activeInHierarchy && incorrect[2].activeInHierarchy)
+        if (correct[0].activeInHierarchy || correct[1].activeInHierarchy || correct[2].activeInHierarchy || correct[3].activeInHierarchy || incorrect[0].activeInHierarchy || incorrect[1].activeInHierarchy || incorrect[2].activeInHierarchy)
         {
             submitButton.interactable = true;
         }
@@ -119,6 +119,12 @@ public class SubmitButtonLevel1 : MonoBehaviour
         } 
 
         if (text[4].activeInHierarchy || text[5].activeInHierarchy || text[6].activeInHierarchy)
+        {
+            continueGame.interactable = false;
+            tryAgain.interactable = true;
+        }
+
+        if (!text[0].activeInHierarchy || !text[1].activeInHierarchy || !text[2].activeInHierarchy || !text[3].activeInHierarchy)
         {
             continueGame.interactable = false;
             tryAgain.interactable = true;
