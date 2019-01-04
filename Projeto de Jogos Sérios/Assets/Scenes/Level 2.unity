@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.35287893, g: 0.57365894, b: 0.8686621, a: 1}
+  m_IndirectSpecularColor: {r: 0.3529284, g: 0.5736776, b: 0.8686604, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1695,7 +1695,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1777136322139768, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
       propertyPath: m_Name
-      value: Objects
+      value: Food
       objectReference: {fileID: 0}
     - target: {fileID: 224563222223662110, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -1816,7 +1816,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 34fb297dff750d7489cc1b273a381da1,
+      objectReference: {fileID: 21300000, guid: 3e7be49153570c24c8354c2644b32af0,
         type: 3}
     - target: {fileID: 114266564374319248, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -1852,6 +1852,14 @@ Prefab:
         type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527835254984462, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
+      propertyPath: m_Name
+      value: Food Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413988293034996, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
+      propertyPath: m_Name
+      value: Food Tab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
@@ -2434,6 +2442,7 @@ GameObject:
   - component: {fileID: 697034306}
   - component: {fileID: 697034305}
   - component: {fileID: 697034304}
+  - component: {fileID: 697034308}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2522,6 +2531,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &697034308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697034303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4af664e15fcb4e98ff32281d346cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambiente: {fileID: 1189185816}
+  alimento: {fileID: 443056972}
+  tabSelected: {fileID: 21300000, guid: 34fb297dff750d7489cc1b273a381da1, type: 3}
+  tabUnselected: {fileID: 21300000, guid: 3e7be49153570c24c8354c2644b32af0, type: 3}
 --- !u!1 &717023816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,7 +3671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.58318126, g: 0.8396226, b: 0.47921857, a: 1}
+  m_Color: {r: 0.42469084, g: 0.6037736, b: 0.3503026, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3667,7 +3691,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Ambiente
+  m_Text: Ambientes
 --- !u!222 &998675344
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4118,11 +4142,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1527835254984462, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
       propertyPath: m_Name
-      value: Object Panel
+      value: Ambient Panel
       objectReference: {fileID: 0}
     - target: {fileID: 1413988293034996, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
       propertyPath: m_Name
-      value: Object Tab
+      value: Ambient Tab
       objectReference: {fileID: 0}
     - target: {fileID: 224563222223662110, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -5603,7 +5627,7 @@ GameObject:
   - component: {fileID: 1724795678}
   - component: {fileID: 1724795677}
   m_Layer: 5
-  m_Name: Objetos
+  m_Name: Alimentos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5639,7 +5663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.58431375, g: 0.84313726, b: 0.48235294, a: 1}
+  m_Color: {r: 0.42469084, g: 0.6037736, b: 0.3503026, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5659,7 +5683,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Objetos
+  m_Text: Alimentos
 --- !u!222 &1724795678
 CanvasRenderer:
   m_ObjectHideFlags: 0
