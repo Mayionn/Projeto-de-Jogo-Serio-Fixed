@@ -296,11 +296,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1527835254984462, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
       propertyPath: m_Name
-      value: Object Panel
+      value: Ambient Panel
       objectReference: {fileID: 0}
     - target: {fileID: 1413988293034996, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
       propertyPath: m_Name
-      value: Object Tab
+      value: Ambient Tab
       objectReference: {fileID: 0}
     - target: {fileID: 224563222223662110, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -389,7 +389,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1777136322139768, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
       propertyPath: m_Name
-      value: Ambient
+      value: Ambiente
       objectReference: {fileID: 0}
     - target: {fileID: 1777136322139768, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
       propertyPath: m_IsActive
@@ -2472,6 +2472,7 @@ GameObject:
   - component: {fileID: 697034306}
   - component: {fileID: 697034305}
   - component: {fileID: 697034304}
+  - component: {fileID: 697034308}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2560,6 +2561,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &697034308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697034303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4af664e15fcb4e98ff32281d346cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambiente: {fileID: 1520710483}
+  alimento: {fileID: 1785945260}
+  tabSelected: {fileID: 21300000, guid: 770150ed698ef744983732b6961ce1b2, type: 3}
+  tabUnselected: {fileID: 21300000, guid: df87223257376cb479b50d6ce920464d, type: 3}
 --- !u!1001 &703090302
 Prefab:
   m_ObjectHideFlags: 0
@@ -2674,7 +2690,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1777136322139768, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
       propertyPath: m_Name
-      value: Objects
+      value: Alimento
       objectReference: {fileID: 0}
     - target: {fileID: 224563222223662110, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -2831,6 +2847,14 @@ Prefab:
         type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527835254984462, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
+      propertyPath: m_Name
+      value: Food Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413988293034996, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
+      propertyPath: m_Name
+      value: Food Tab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e1cd8435f4fc8744affc061df2b1e58, type: 2}
