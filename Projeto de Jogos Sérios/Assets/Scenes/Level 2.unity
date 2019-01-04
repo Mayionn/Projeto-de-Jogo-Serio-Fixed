@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.35287893, g: 0.57365894, b: 0.8686621, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 22283237}
   - component: {fileID: 22283239}
   - component: {fileID: 22283238}
+  - component: {fileID: 22283240}
   m_Layer: 5
   m_Name: Correto Panel
   m_TagString: Untagged
@@ -239,14 +240,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.90196085, g: 1, b: 0.6901961, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 516f6bf1dadb50a47a785f639a477484, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -262,6 +263,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 22283236}
   m_CullTransparentMesh: 0
+--- !u!114 &22283240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 22283236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.5529412, g: 0.86666673, b: 0.43921572, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &36634598
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,9 +991,9 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Strength: 0.45
+    m_Bias: 0.11
+    m_NormalBias: 0
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
@@ -1174,6 +1189,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: a23fc4b102ec5684eadde038818bce6e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97d34147df7470149b75c1a0f0d96c12, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a23fc4b102ec5684eadde038818bce6e, type: 3}
   m_IsPrefabAsset: 0
@@ -1403,6 +1422,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: a23fc4b102ec5684eadde038818bce6e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97d34147df7470149b75c1a0f0d96c12, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a23fc4b102ec5684eadde038818bce6e, type: 3}
   m_IsPrefabAsset: 0
@@ -1793,7 +1816,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 516f6bf1dadb50a47a785f639a477484,
+      objectReference: {fileID: 21300000, guid: 34fb297dff750d7489cc1b273a381da1,
         type: 3}
     - target: {fileID: 114266564374319248, guid: 9e1cd8435f4fc8744affc061df2b1e58,
         type: 2}
@@ -1901,6 +1924,11 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!224 &443056973 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224563222223662110, guid: 9e1cd8435f4fc8744affc061df2b1e58,
+    type: 2}
+  m_PrefabInternal: {fileID: 443056968}
 --- !u!4 &463361874 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: a23fc4b102ec5684eadde038818bce6e,
@@ -3597,14 +3625,14 @@ RectTransform:
   m_GameObject: {fileID: 998675341}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49310303, y: 0.49310312, z: 0.49310306}
+  m_LocalScale: {x: 4.6719203, y: 17.398481, z: 0.7009282}
   m_Children: []
-  m_Father: {fileID: 1189185813}
-  m_RootOrder: 4
+  m_Father: {fileID: 1189185817}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -325, y: 3}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &998675343
@@ -4371,6 +4399,11 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!224 &1189185817 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224563222223662110, guid: 9e1cd8435f4fc8744affc061df2b1e58,
+    type: 2}
+  m_PrefabInternal: {fileID: 1189185812}
 --- !u!1 &1227286642
 GameObject:
   m_ObjectHideFlags: 0
@@ -4629,7 +4662,7 @@ RectTransform:
   m_LocalScale: {x: 0.4544202, y: 2.200477, z: 0.42646468}
   m_Children: []
   m_Father: {fileID: 443056969}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5191,6 +5224,7 @@ GameObject:
   - component: {fileID: 1585541240}
   - component: {fileID: 1585541242}
   - component: {fileID: 1585541241}
+  - component: {fileID: 1585541243}
   m_Layer: 5
   m_Name: Incorreto Panel
   m_TagString: Untagged
@@ -5230,14 +5264,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.90196085, g: 1, b: 0.6901961, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 516f6bf1dadb50a47a785f639a477484, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5253,6 +5287,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1585541239}
   m_CullTransparentMesh: 0
+--- !u!114 &1585541243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585541239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.5529412, g: 0.86666673, b: 0.43921572, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!4 &1586625321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ef366db943e4e6147bdf162419dff84f,
@@ -5569,14 +5617,14 @@ RectTransform:
   m_GameObject: {fileID: 1724795675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49310145, y: 0.49310145, z: 0.4931014}
+  m_LocalScale: {x: 4.671905, y: 17.398422, z: 0.7009259}
   m_Children: []
-  m_Father: {fileID: 443056969}
-  m_RootOrder: 6
+  m_Father: {fileID: 443056973}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168.00012, y: 2.9999847}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724795677
@@ -6581,7 +6629,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 85abae5aa13ce894499705bd51186532, type: 3}
+  - {fileID: 2100000, guid: 1a417edddc1af884496805c1b7d5eb52, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6657,7 +6705,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 85abae5aa13ce894499705bd51186532, type: 3}
+  - {fileID: 2100000, guid: 1a417edddc1af884496805c1b7d5eb52, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
