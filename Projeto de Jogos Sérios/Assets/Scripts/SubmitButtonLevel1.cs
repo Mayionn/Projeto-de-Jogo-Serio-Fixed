@@ -28,12 +28,12 @@ public class SubmitButtonLevel1 : MonoBehaviour
     //Se nenhum objeto estiver ativo na cena, o botão submit está disabled
     private void Update()
     {
-        if (!correct[0].activeInHierarchy && !correct [1].activeInHierarchy && !correct[2].activeInHierarchy && !correct[3].activeInHierarchy && !incorrect[0].activeInHierarchy && !incorrect[1].activeInHierarchy && !incorrect[2].activeInHierarchy)
+        if (!correct[0].activeInHierarchy && !correct [1].activeInHierarchy && !correct[2].activeInHierarchy && !correct[3].activeInHierarchy && !incorrect[0].activeInHierarchy && !incorrect[1].activeInHierarchy && !incorrect[2].activeInHierarchy && !incorrect[3].activeInHierarchy && !incorrect[4].activeInHierarchy)
         {
             submitButton.interactable = false;
         }
 
-        if (correct[0].activeInHierarchy || correct[1].activeInHierarchy || correct[2].activeInHierarchy || correct[3].activeInHierarchy || incorrect[0].activeInHierarchy || incorrect[1].activeInHierarchy || incorrect[2].activeInHierarchy)
+        if (correct[0].activeInHierarchy || correct[1].activeInHierarchy || correct[2].activeInHierarchy || correct[3].activeInHierarchy || incorrect[0].activeInHierarchy || incorrect[1].activeInHierarchy || incorrect[2].activeInHierarchy || incorrect[3].activeInHierarchy || incorrect[4].activeInHierarchy)
         {
             submitButton.interactable = true;
         }
@@ -106,6 +106,25 @@ public class SubmitButtonLevel1 : MonoBehaviour
             text[6].SetActive(false);
         }
 
+        if (incorrect[3].activeInHierarchy)         //Cacti
+        {
+            text[7].SetActive(true);
+        }
+        else
+        {
+            text[7].SetActive(false);
+        }
+
+        if (incorrect[4].activeInHierarchy)         //Bunny
+        {
+            text[8].SetActive(true);
+        } 
+        else
+        {
+            text[8].SetActive(false);
+        }
+
+
         // Se algum texto do array das respostas incorretas estiver visível, um botão a dizer "tentar outra vez" irá aparecer.
         // Caso não, um botão a dizer "continuar" vai aparecer, onde nos vai levar para o próximo nível
 
@@ -118,13 +137,13 @@ public class SubmitButtonLevel1 : MonoBehaviour
             }
         } 
 
-        if (text[4].activeInHierarchy || text[5].activeInHierarchy || text[6].activeInHierarchy)
+        if (text[4].activeInHierarchy || text[5].activeInHierarchy || text[6].activeInHierarchy || text[7].activeInHierarchy || text[8].activeInHierarchy)        //respostas incorretas ativas
         {
             continueGame.interactable = false;
             tryAgain.interactable = true;
         }
 
-        if (!text[0].activeInHierarchy || !text[1].activeInHierarchy || !text[2].activeInHierarchy || !text[3].activeInHierarchy)
+        if (!text[0].activeInHierarchy || !text[1].activeInHierarchy || !text[2].activeInHierarchy || !text[3].activeInHierarchy)   //respostas corretas nao estiverem ativas
         {
             continueGame.interactable = false;
             tryAgain.interactable = true;

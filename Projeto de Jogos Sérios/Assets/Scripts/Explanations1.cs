@@ -161,4 +161,40 @@ public class Explanations1 : MonoBehaviour
             explanationIncorrect[2].SetActive(false);
         }
     }
+
+    public void mouseEnterIncorrect4()                                  //Bunny
+    {
+        if (answersIncorrect[3].activeInHierarchy)
+        {
+            Default.SetActive(false);
+            explanationIncorrect[3].SetActive(true);
+        }
+    }
+
+    public void mouseExitIncorrect4()
+    {
+        if (answersIncorrect[3].activeInHierarchy)
+        {
+            Default.SetActive(true);
+            explanationIncorrect[3].SetActive(false);
+        }
+    }
+
+    public void mouseEnterIncorrect5()                                  //Cacti
+    {
+        if (answersIncorrect[4].activeInHierarchy)
+        {
+            Default.SetActive(false);
+            explanationIncorrect[4].SetActive(true);
+        }
+    }
+
+    public void mouseExitIncorrect5()
+    {
+        if (answersIncorrect[4].activeInHierarchy)
+        {
+            Default.SetActive(true);
+            explanationIncorrect[4].SetActive(false);
+        }
+    }
 }

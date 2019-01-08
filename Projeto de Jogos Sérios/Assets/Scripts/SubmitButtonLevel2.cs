@@ -28,12 +28,12 @@ public class SubmitButtonLevel2 : MonoBehaviour
     //Se nenhum objeto estiver ativo na cena, o botão submit está disabled
     private void Update()
     {
-        if (!correct[0].activeInHierarchy && !correct [1].activeInHierarchy && !incorrect[0].activeInHierarchy && !incorrect[1].activeInHierarchy && !incorrect[2].activeInHierarchy && !incorrect[3].activeInHierarchy && !incorrect[4].activeInHierarchy)
+        if (!correct[0].activeInHierarchy && !correct [1].activeInHierarchy && !incorrect[0].activeInHierarchy && !incorrect[1].activeInHierarchy && !incorrect[2].activeInHierarchy && !incorrect[3].activeInHierarchy && !incorrect[4].activeInHierarchy && !incorrect[5].activeInHierarchy && !incorrect[6].activeInHierarchy)
         {
             submitButton.interactable = false;
         }
 
-        if (correct[0].activeInHierarchy || correct[1].activeInHierarchy || incorrect[0].activeInHierarchy || incorrect[1].activeInHierarchy || incorrect[2].activeInHierarchy || incorrect[3].activeInHierarchy || incorrect[4].activeInHierarchy)
+        if (correct[0].activeInHierarchy || correct[1].activeInHierarchy || incorrect[0].activeInHierarchy || incorrect[1].activeInHierarchy || incorrect[2].activeInHierarchy || incorrect[3].activeInHierarchy || incorrect[4].activeInHierarchy || incorrect[5].activeInHierarchy || incorrect[6].activeInHierarchy)
         {
             submitButton.interactable = true;
         }
@@ -59,6 +59,15 @@ public class SubmitButtonLevel2 : MonoBehaviour
         else
         {
             text[1].SetActive(false);
+        }
+
+        if (correct[2].activeInHierarchy)               // bunny
+        {
+            text[8].SetActive(true);
+        }
+        else
+        {
+            text[8].SetActive(false);
         }
 
         if (incorrect[0].activeInHierarchy)
@@ -106,10 +115,20 @@ public class SubmitButtonLevel2 : MonoBehaviour
             text[6].SetActive(false);
         }
 
+        if (incorrect[5].activeInHierarchy)         //Cacti
+        {
+            text[7].SetActive(true);
+        }
+        else
+        {
+            text[7].SetActive(false);
+        }
+
+
         // Se algum texto do array das respostas incorretas estiver visível, um botão a dizer "tentar outra vez" irá aparecer.
         // Caso não, um botão a dizer "continuar" vai aparecer, onde nos vai levar para o próximo nível
 
-        if (text[0].activeInHierarchy && text[1].activeInHierarchy)        //Respostas corretas ativas
+        if (text[0].activeInHierarchy && text[1].activeInHierarchy && text[8].activeInHierarchy)        //Respostas corretas ativas
         {
             if (!text[2].activeInHierarchy && !text[3].activeInHierarchy && !text[4].activeInHierarchy && !text[5].activeInHierarchy && !text[6].activeInHierarchy)
             {
@@ -118,13 +137,13 @@ public class SubmitButtonLevel2 : MonoBehaviour
             }
         } 
 
-        if (text[2].activeInHierarchy || text[3].activeInHierarchy || text[4].activeInHierarchy || text[5].activeInHierarchy || text[6].activeInHierarchy)
+        if (text[2].activeInHierarchy || text[3].activeInHierarchy || text[4].activeInHierarchy || text[5].activeInHierarchy || text[6].activeInHierarchy || text [7].activeInHierarchy)
         {
             continueGame.interactable = false;
             tryAgain.interactable = true;
         }
 
-        if (!text[0].activeInHierarchy || !text[1].activeInHierarchy)
+        if (!text[0].activeInHierarchy || !text[1].activeInHierarchy || text[8].activeInHierarchy)
         {
             continueGame.interactable = false;
             tryAgain.interactable = true;

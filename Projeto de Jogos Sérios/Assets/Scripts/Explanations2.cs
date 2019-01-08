@@ -50,6 +50,24 @@ public class Explanations2 : MonoBehaviour
         }
     }
 
+    public void mouseEnterCorrect3()                            //Bunny
+    {
+        if (answersCorrect[2].activeInHierarchy)
+        {
+            Default.SetActive(false);
+            explanationCorrect[2].SetActive(true);
+        }
+    }
+
+    public void mouseExitCorrect3()
+    {
+        if (answersCorrect[2].activeInHierarchy)
+        {
+            Default.SetActive(true);
+            explanationCorrect[2].SetActive(false);
+        }
+    }
+
 
 
     public void mouseEnterIncorrect1()
@@ -139,6 +157,24 @@ public class Explanations2 : MonoBehaviour
         {
             Default.SetActive(true);
             explanationIncorrect[4].SetActive(false);
+        }
+    }
+
+    public void mouseEnterIncorrect6()                                  //cacti
+    {
+        if (answersIncorrect[5].activeInHierarchy)
+        {
+            Default.SetActive(false);
+            explanationIncorrect[5].SetActive(true);
+        }
+    }
+
+    public void mouseExitIncorrect6()
+    {
+        if (answersIncorrect[5].activeInHierarchy)
+        {
+            Default.SetActive(true);
+            explanationIncorrect[5].SetActive(false);
         }
     }
 }

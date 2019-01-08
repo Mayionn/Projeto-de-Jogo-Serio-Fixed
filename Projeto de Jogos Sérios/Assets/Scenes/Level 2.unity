@@ -3714,12 +3714,14 @@ MonoBehaviour:
   correct:
   - {fileID: 1582385045}
   - {fileID: 1740177506}
+  - {fileID: 0}
   incorrect:
   - {fileID: 93443560}
   - {fileID: 1791854562}
   - {fileID: 255259064}
   - {fileID: 156355316}
   - {fileID: 1736103172}
+  - {fileID: 0}
   text:
   - {fileID: 1636512355}
   - {fileID: 155591545}
@@ -3728,6 +3730,8 @@ MonoBehaviour:
   - {fileID: 1160093715}
   - {fileID: 1274223626}
   - {fileID: 1861593450}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &893795799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3742,21 +3746,25 @@ MonoBehaviour:
   answersCorrect:
   - {fileID: 155591545}
   - {fileID: 1636512355}
+  - {fileID: 0}
   answersIncorrect:
   - {fileID: 852192124}
   - {fileID: 1907765977}
   - {fileID: 1160093715}
   - {fileID: 1274223626}
   - {fileID: 1861593450}
+  - {fileID: 0}
   explanationCorrect:
   - {fileID: 1214299443}
   - {fileID: 1715226075}
+  - {fileID: 0}
   explanationIncorrect:
   - {fileID: 1158296309}
   - {fileID: 881020457}
   - {fileID: 1671152187}
   - {fileID: 214059940}
   - {fileID: 644538974}
+  - {fileID: 0}
   Default: {fileID: 1494470976}
 --- !u!4 &929870379 stripped
 Transform:
