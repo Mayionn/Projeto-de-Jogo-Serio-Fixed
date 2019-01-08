@@ -1,29 +1,20 @@
 fileFormatVersion: 2
-guid: 0cd255918f807ec4dac1be5cc3e027b7
+guid: 285dd665701174544a49be568321ea06
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cylinder001
-    100004: Cylinder002
     400000: //RootNode
-    400002: Cylinder001
-    400004: Cylinder002
-    2100000: phong1
-    2300000: Cylinder001
-    2300002: Cylinder002
-    3300000: Cylinder001
-    3300002: Cylinder002
-    4300000: Cylinder001
-    4300002: Cylinder002
-    7400000: Take 001
-    9500000: //RootNode
+    2100000: Material.001
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Box001
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: phong1
-    second: {fileID: 2100000, guid: 2bfdc07ed5ab0d34e8cfc433643b7148, type: 2}
+      name: Material.001
+    second: {fileID: 2100000, guid: f9b364865636c894f9726afc912ecc06, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -74,8 +65,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -99,7 +90,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
